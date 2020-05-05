@@ -85,14 +85,14 @@ a, a:hover, a:focus {
 }
 
 .nav-link {
-    background-color: #2A868A !important;
+    background-color: rgb(135, 149, 150) !important;
     color: #fff!important;
 }
 
 #sidebar {
   min-width: 275px;
   max-width: 275px;
-  background: #085D61;
+  background: rgb(53, 54, 54);
   color: #fff;
   transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
   transform-origin: bottom left;
@@ -105,7 +105,7 @@ a, a:hover, a:focus {
 
 #sidebar .sidebar-header {
   padding: 20px;
-  background: #13777C;
+  background: rgb(101, 102, 102);
 }
 
 .componentHeader{
@@ -115,7 +115,7 @@ color: #FF726E;
 
 #sidebar ul.components {
   padding: 20px 0;
-  border-bottom: 1px solid #2A868A;
+  border-bottom: 1px solid rgb(101, 102, 102);
 }
 
 #sidebar ul p {
@@ -129,13 +129,13 @@ color: #FF726E;
   display: block;
 }
 #sidebar ul li a:hover {
-  color: #085D61;
-  background: #fff;
+  color: #fff;
+  background:  rgb(135, 149, 150);
 }
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
-  color: #fff;
-  background: #13777C;
+  color:  rgb(135, 149, 150);
+  background: rgb(101, 102, 102);
 }
 
 
@@ -154,7 +154,7 @@ a[data-toggle="collapse"] {
 ul ul a {
   font-size: 0.9em !important;
   padding-left: 30px !important;
-  background: #13777C;
+  background: rgb(101, 102, 102);
 }
 
 ul.CTAs {
