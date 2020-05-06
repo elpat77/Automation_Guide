@@ -32,8 +32,8 @@
             <div class="sidebar-header">
                 <div class="container">
                     <div class="row">
-                        <div class="logo mt-3">
-                            <img class="logo mb-2" src="./assets/images/EscuelaSierraNevadaSunland-04.png">
+                        <div class="logo">
+                            <img class="logo" src="./assets/rock-n-roll-monkey-R4WCbazrD1g-unsplash-3-570x300.jpg">
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
                             <a class="nav-link border-bottom border-light" id="v-pills-rubyOverview-tab"
                                 data-toggle="pill" href="#v-pills-rubyOverview" role="tab">Ruby Overview</a>
                             <a class="nav-link border-bottom border-light" id="v-pills-rubyTests-tab" data-toggle="pill"
-                                href="#v-pills-rubyTests" role="tab">Test execution</a>
+                                href="#v-pills-rubyTests" role="tab">Test Set-Up</a>
                             <a class="nav-link border-bottom border-light" id="v-pills-rubyScripts-tab"
                                 data-toggle="pill" href="#v-pills-rubyScripts" role="tab">Ruby Scripts</a>
                         </ul>
@@ -128,32 +128,35 @@
                 </div>
 
                 <div class="tab-pane fade" id="v-pills-rubyOverview" role="tabpanel">
-                    <h2>Ruby Overview</h2>
-                    <p class="card-text">This guide was created in order to use Selenium Webdriver with
-                        Ruby using Mac OS.
-                        <br><br>
-                        There are several methods to install Ruby, including
-                        package managers, which are the system-provided tools that manage software
-                        packages; installers, which install specific versions of Ruby; managers, which
-                        help switch between multiple Ruby installations, and from source code. <br>Using
-                        third-party tools like managers or package managers might be a better idea that
-                        allow you to more easily get set up with Ruby.
-                        <br><br>
-                        I recommend using the
-                        manager RVM,
-                        which stands for the Ruby Version Manager, it's widely used, and allows
-                        you to
-                        quickly and easily install Ruby.
-                        <p><a class="btn" href="http://rvm.io/">Link to Ruby RVM Website</a></p>
-                    </p>
+                    <div class="text-center">
+                        <h2>Ruby Overview</h2>
+                        <p class="card-text">This guide was created in order to use Selenium Webdriver with
+                            Ruby using Mac OS.
+                            <br><br>
+                            There are several methods to install Ruby, including
+                            package managers, which are the system-provided tools that manage software
+                            packages; installers, which install specific versions of Ruby; managers, which
+                            help switch between multiple Ruby installations, and from source code. <br>Using
+                            third-party tools like managers or package managers might be a better idea that
+                            allow you to more easily get set up with Ruby.
+                            <br><br>
+                            I recommend using the
+                            manager RVM,
+                            which stands for the Ruby Version Manager, it's widely used, and allows
+                            you to
+                            quickly and easily install Ruby.
+                            <p><a class="btn" href="http://rvm.io/" role="button" target="_blank">Ruby RVM Website</a>
+                            </p>
+                        </p>
+                    </div>
                     <div class="line"></div>
 
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="card text-white text-center">
+                                    <h5 class="card-header">Ruby Installation</h5>
                                     <div class="card-body">
-                                        <h5 class="card-title">Ruby Installation</h5>
                                         <p class="card-text">
 
                                             <li>For installing RVM with default Ruby and Rails in one command, type:<br>
@@ -174,10 +177,9 @@
                                     </div>
                                 </div>
 
-
                                 <div class="card text-white text-center mt-3">
+                                    <h5 class="card-header">Additional Drivers</h5>
                                     <div class="card-body">
-                                        <h5 class="card-title">Additional Drivers</h5>
                                         <p class="card-text">
                                             <li>The last thing to do before jumping into writing a test is to
                                                 make
@@ -185,11 +187,12 @@
                                                 that
                                                 we have a browser driver set up. In this case we are using
                                                 geckodriver
-                                                so that tests written in webdriver can be read in Firefox.<br>
+                                                so that tests written in webdriver can be read in Firefox.<br><br>
                                                 The
                                                 download
                                                 link is: <p><a class="btn"
-                                                        href="https://github.com/mozilla/geckodriver/releases">Gecko
+                                                        href="https://github.com/mozilla/geckodriver/releases"
+                                                        role="button" target="_blank">Gecko
                                                         Driver</a></p>
 
                                             </li>
@@ -197,7 +200,7 @@
                                                 release
                                                 and
                                                 download the package for your specific OS; in this case Mac OS.
-                                            </li>
+                                            </li><br><br>
                                             <li> If desired, move the downloaded folder to a folder of your
                                                 choosing
                                                 and
@@ -220,8 +223,8 @@
                             </div>
                             <div class="col-sm-8">
                                 <div class="card text-white text-center">
+                                    <h5 class="card-header">Selenium Webriver for Ruby</h5>
                                     <div class="card-body">
-                                        <h5 class="card-title">Selenium Webriver for Ruby</h5>
                                         <p class="card-text">
                                             In order to create scripts that interact with the Selenium Server
                                             (Remote
@@ -229,13 +232,15 @@
                                             use
                                             of language-specific client drivers.<br><br></p>
                                         <li>Selenium-Webdriver for Ruby can be downloaded on the following link:<p>
-                                                <a class="btn" href="https://www.selenium.dev/downloads/">Ruby
+                                                <a class="btn" href="https://www.selenium.dev/downloads/" role="button"
+                                                    target="_blank">Ruby
                                                     Selenium</a></p>
                                         </li>
                                         <li>By selecting the above link, user will be taken to the Ruby Gems
                                             Selenium
                                             Webdriver page: <p> <a class="btn"
-                                                    href="https://rubygems.org/gems/selenium-webdriver">Ruby
+                                                    href="https://rubygems.org/gems/selenium-webdriver" role="button"
+                                                    target="_blank">Ruby
                                                     Gems</a></p>
                                         </li>
 
@@ -285,29 +290,71 @@
                 </div>
 
 
-
                 <div class="tab-pane fade" id="v-pills-rubyTests" role="tabpanel">
-                    <h2>Exectuting the Tests</h2>
+                    <div class="text-center">
+                        <h2>Using WebDriver</h2>
+                        <p>The Webdriver API docs can be found on the following site:
+                            <p> <a class="btn"
+                                    href="https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/index.html"
+                                    role="button" target="_blank">Webdriver API Docs</a></p>
+                        </p>
+                        <div class="line"></div>
+                    </div>
+                    <p> WebDriver is the perfect option for those who have a need to
+                        test their application across multiple browsers and platforms. There is a lot of customization
+                        to use the WebDriver API, which makes it a very powerful testing framework. If you need to
+                        automate web tests, WebDriver is definitely the way to go.
+                        <br>Selenium WebDriver works using client server communication. When a Selenium test is
+                        executed, a new session of the browser driver is
+                        created and a browser is launched.<br>
+                        For each command in the test script, a request is sent to the WebDriver API. The WebDriver API
+                        interprets the request and the step is then executed in the browser driver, which acts as the
+                        server and just waits for the request to come in. Once each step is complete, the response is
+                        sent back to the WebDriver API and then back to the test. This process continues until all steps
+                        are complete.</p>
                     <div class="line"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum.</p>
-                    <div class="line"></div>
-                    <h2>We can add some text if needed</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum.</p>
+
+
+                    <div class="card text-white mb-3 text-center">
+                        <div class="card-header">First Test</div>
+                        <div class="card-body">
+                            <p>We will be using the Ruby API documentation for WebDriver.<br> Familiarize yourself with
+                                all
+                                the
+                                classes and methods available to perform actions on the browser.</p><br>
+                            <p> The following is a simple sample test using such classes and methods:</p>
+
+                            # 1) Indicate the use of selenium webdriver:<br>
+                            <code>require "selenium-webdriver"</code><br>
+                            # 2) Using the Driver Class:<br>
+                            # Set-up the driver, in this case we create a new instance of the Firefox driver.<br>
+                            <code>driver = Selenium::WebDriver.for :firefox</code><br>
+                            # Then we use the same driver to navigate into the google URL<br>
+                            <code>driver.navigate.to "http://google.com"</code><br>
+                            # 3) We now use the Search Context Class to find elements, which will find the
+                            first element matching the given arguments<br>
+                            # There are many options available to find an HTML element, such as class name, CSS
+                            selector, ID, or tag name.<br>
+                            # In this case, we are finding an element with the name 'q'<br>
+                            <code> element = driver.find_element(name: 'q')</code><br>
+
+                            # 4) After finding an element, the next step is to perform some action on that element. This
+                            all happens within the Element Class.<br>
+                            # In the element class, there are tons of options that can be used to drive action on
+                            elements.<br>
+                            # In this case we are going to click.<br>
+                            <code> element.click</code><br>
+                            # In this case we are going to type (send keys)<br>
+                            <code> element.send_keys "Hello WebDriver!"</code><br>
+                            # In this case we are clicking and submitting the specified form element<br>
+                            <code> element.submit</code><br>
+
+                            # Herfe we will close the driver session<br>
+                            <code>driver.quit</code><br>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="tab-pane fade" id="v-pills-rubyScripts" role="tabpanel">
                     <h2>Scripts to use</h2>
                     <div class="line"></div>
