@@ -124,6 +124,17 @@
                     <p>It contains things such as installation, tools needed and scripts to use in order to run tests.
                     </p>
                     <div class="line"></div>
+                    <p>Important Steps to take before writting automation:
+                        <ul>Number one, it's all about deciding what features to automate. This requires having
+                            knowledge of the application under test and all of the available functionality. </ul>
+                        <ul>Number two, outline the scenarios that will be automated, and the steps of each test. Be
+                            aware of what the inputs and outputs will be, and the value each scenario implemented will
+                            provide.</ul>
+                        <ul>Number three, find the web elements that will be needed for testing. It's important to
+                            figure out what elements are going to be used in the tests upfront. This will make test
+                            writing much easier, faster, and smoother</ul>
+                    </p>
+                    <div class="line"></div>
 
                 </div>
 
@@ -316,7 +327,7 @@
 
 
                     <div class="card text-white mb-3 text-center">
-                        <div class="card-header">First Test</div>
+                        <div class="card-header">Sample Test</div>
                         <div class="card-body">
                             <p>We will be using the Ruby API documentation for WebDriver.<br> Familiarize yourself with
                                 all
@@ -324,7 +335,14 @@
                                 classes and methods available to perform actions on the browser.</p><br>
                             <p> The following is a simple sample test using such classes and methods:</p>
 
-                            # 1) Indicate the use of selenium webdriver:<br>
+                            <a class="btn" role="button" href="./assets/files/sample-test.rb" download>
+                                Download Sample Code
+                            </a>
+
+
+                            </p>
+
+                            # 1) Requires the selenium-webdriver gem in order to use the webdriver API library<br>
                             <code>require "selenium-webdriver"</code><br>
                             # 2) Using the Driver Class:<br>
                             # Set-up the driver, in this case we create a new instance of the Firefox driver.<br>
@@ -439,6 +457,7 @@
                 $('#sidebar').toggleClass('active');
                 $(this).toggleClass('active');
             });
+
         });
     </script>
 
