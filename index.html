@@ -50,7 +50,7 @@
                             <a class="nav-link border-bottom border-light" id="v-pills-rubyOverview-tab"
                                 data-toggle="pill" href="#v-pills-rubyOverview" role="tab">Ruby Overview</a>
                             <a class="nav-link border-bottom border-light" id="v-pills-rubyTests-tab" data-toggle="pill"
-                                href="#v-pills-rubyTests" role="tab">Test Set-Up</a>
+                                href="#v-pills-rubyTests" role="tab">Test Execution</a>
                             <a class="nav-link border-bottom border-light" id="v-pills-rubyScripts-tab"
                                 data-toggle="pill" href="#v-pills-rubyScripts" role="tab">Ruby Scripts</a>
                         </ul>
@@ -242,14 +242,9 @@
                                             WebDriver) or create local Selenium WebDriver scripts, you need to make
                                             use
                                             of language-specific client drivers.<br><br></p>
-                                        <li>Selenium-Webdriver for Ruby can be downloaded on the following link:<p>
-                                                <a class="btn" href="https://www.selenium.dev/downloads/" role="button"
-                                                    target="_blank">Ruby
-                                                    Selenium</a></p>
-                                        </li>
-                                        <li>By selecting the above link, user will be taken to the Ruby Gems
-                                            Selenium
-                                            Webdriver page: <p> <a class="btn"
+
+                                        <li>In this case we need the Ruby specific gemfile, which can be downloaded on
+                                            the following link: <p> <a class="btn"
                                                     href="https://rubygems.org/gems/selenium-webdriver" role="button"
                                                     target="_blank">Ruby
                                                     Gems</a></p>
@@ -263,23 +258,31 @@
                                             Gems can
                                             either be installed via gem install or via the bundler.<br><br></p>
 
-                                        <li>Install gems by locating the "Gemfile" command and copyting it, it looks
+                                        <li>Install gems by locating the "Gemfile" command and copying it; it looks
                                             something like this: <p>
                                                 <code> gem 'selenium-webdriver', '~> 3.142', '>= 3.142.7'</code>
                                             </p>
                                         </li>
-                                        <li> Within your project, create a executable file and open it using a text
+                                        <li> Download the following sample Gemfile and place it within your project
+                                            folder, you
+                                            can open it using a text
                                             editor
                                             such as
-                                            Sublime Text. Name this file
-                                            :Gemfile. <br>Once there, the first line of this file should be the
+                                            Sublime Text.<br>
+
+                                            <a class="btn" role="button" href="./assets/files/Gemfile" download>
+                                                Download Sample Gemfile
+                                            </a>
+                                        </li>
+                                        <br>
+                                        <li>Once the file is open, the first line of this file should be the
                                             source.
                                             The
                                             source is the webpage, rubygems.org and tells the bundler where to go to
                                             search
                                             for and install the specified Gems.<br> (this is the gemfile source we
                                             just
-                                            copied)<br><br>
+                                            copied)</li><br><br>
 
                                         </li>
                                         <li> In this case the Gemile should contain the following two lines:<br>
@@ -311,6 +314,11 @@
                         </p>
                         <div class="line"></div>
                     </div>
+                    <p>We will be using the Ruby API documentation for WebDriver. Familiarize
+                        yourself with
+                        all
+                        the
+                        classes and methods available to perform actions on the browser.</p><br>
                     <p> WebDriver is the perfect option for those who have a need to
                         test their application across multiple browsers and platforms. There is a lot of customization
                         to use the WebDriver API, which makes it a very powerful testing framework. If you need to
@@ -324,107 +332,138 @@
                         sent back to the WebDriver API and then back to the test. This process continues until all steps
                         are complete.</p>
                     <div class="line"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card text-white mb-3 text-center">
+                                    <div class="card-header">Sample Test</div>
+                                    <div class="card-body">
+
+                                        <p> The following is a very simple sample test using such classes and methods:
+                                        </p>
+
+                                        <a class="btn" role="button" href="./assets/files/sample-test.rb" download>
+                                            Download Sample Code
+                                        </a>
 
 
-                    <div class="card text-white mb-3 text-center">
-                        <div class="card-header">Sample Test</div>
-                        <div class="card-body">
-                            <p>We will be using the Ruby API documentation for WebDriver.<br> Familiarize yourself with
-                                all
-                                the
-                                classes and methods available to perform actions on the browser.</p><br>
-                            <p> The following is a simple sample test using such classes and methods:</p>
+                                        </p>
 
-                            <a class="btn" role="button" href="./assets/files/sample-test.rb" download>
-                                Download Sample Code
-                            </a>
+                                        # 1) Requires the selenium-webdriver gem in order to use the webdriver API
+                                        library<br>
+                                        <code>require "selenium-webdriver"</code><br>
+                                        # 2) Using the Driver Class:<br>
+                                        # Set-up the driver, in this case we create a new instance of the Firefox
+                                        driver.<br>
+                                        <code>driver = Selenium::WebDriver.for :firefox</code><br>
+                                        # Then we use the same driver to navigate into the google URL<br>
+                                        <code>driver.navigate.to "http://google.com"</code><br>
+                                        # 3) We now use the Search Context Class to find elements, which will find the
+                                        first element matching the given arguments<br>
+                                        # There are many options available to find an HTML element, such as class name,
+                                        CSS
+                                        selector, ID, or tag name.<br>
+                                        # In this case, we are finding an element with the name 'q'<br>
+                                        <code> element = driver.find_element(name: 'q')</code><br>
+
+                                        # 4) After finding an element, the next step is to perform some action on that
+                                        element. This
+                                        all happens within the Element Class.<br>
+                                        # In the element class, there are tons of options that can be used to drive
+                                        action on
+                                        elements.<br>
+                                        # In this case we are going to click.<br>
+                                        <code> element.click</code><br>
+                                        # In this case we are going to type (send keys)<br>
+                                        <code> element.send_keys "Hello WebDriver!"</code><br>
+                                        # In this case we are clicking and submitting the specified form element<br>
+                                        <code> element.submit</code><br>
+
+                                        # Hefe we will close the driver session<br>
+                                        <code>driver.quit</code><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
 
 
-                            </p>
+                                <div class="card text-white mb-3 text-center">
+                                    <div class="card-header">Test Execution</div>
+                                    <div class="card-body">
+                                        <p>To execute the test, open up the terminal and go to the
+                                            location of the file to be executed.
+                                            <p> This location should contain both the Gemfile and the
+                                                sample-test.rb files</p>
+                                            # 1) Execute the following command:<br>
+                                            <code>rspec sample-test.rb</code><br><br>
+                                            <p>Sit back and wait for the reults, if everything is
+                                                working correctly the test should execute</p>
+                                            <p>
+                                                <h2>Congratulations!</h2>
+                                            </p>
+                                    </div>
+                                </div>
+                            </div>
 
-                            # 1) Requires the selenium-webdriver gem in order to use the webdriver API library<br>
-                            <code>require "selenium-webdriver"</code><br>
-                            # 2) Using the Driver Class:<br>
-                            # Set-up the driver, in this case we create a new instance of the Firefox driver.<br>
-                            <code>driver = Selenium::WebDriver.for :firefox</code><br>
-                            # Then we use the same driver to navigate into the google URL<br>
-                            <code>driver.navigate.to "http://google.com"</code><br>
-                            # 3) We now use the Search Context Class to find elements, which will find the
-                            first element matching the given arguments<br>
-                            # There are many options available to find an HTML element, such as class name, CSS
-                            selector, ID, or tag name.<br>
-                            # In this case, we are finding an element with the name 'q'<br>
-                            <code> element = driver.find_element(name: 'q')</code><br>
-
-                            # 4) After finding an element, the next step is to perform some action on that element. This
-                            all happens within the Element Class.<br>
-                            # In the element class, there are tons of options that can be used to drive action on
-                            elements.<br>
-                            # In this case we are going to click.<br>
-                            <code> element.click</code><br>
-                            # In this case we are going to type (send keys)<br>
-                            <code> element.send_keys "Hello WebDriver!"</code><br>
-                            # In this case we are clicking and submitting the specified form element<br>
-                            <code> element.submit</code><br>
-
-                            # Herfe we will close the driver session<br>
-                            <code>driver.quit</code><br>
                         </div>
                     </div>
                 </div>
 
-                <div class="tab-pane fade" id="v-pills-rubyScripts" role="tabpanel">
-                    <h2>Scripts to use</h2>
-                    <div class="line"></div>
-                    <div class="card-columns">
-                        <div class="container">
-                            <div class="card text-white mb-3 text-center">
-                                <div class="card-header">Math</div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Basic Details regarding this course</h5>
-                                    <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing
-                                        elit.
-                                        Incidunt, dignissimos!</p>
-                                    <a class="btn" id="btnCourses" href="../views/classInfoStudent.html">Class
-                                        Info</a>
-                                </div>
-                            </div>
-
-                            <div class="card text-white mb-3 text-center">
-                                <div class="card-header">Science</div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Basic Details regarding this course</h5>
-                                    <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing
-                                        elit.
-                                        Incidunt, dignissimos!</p>
-
-                                    <a class="btn" id="btnCourses" href="../views/classInfoStudent.html">Class
-                                        Info</a>
-                                </div>
-
-                            </div>
-
-                            <div class="card text-white  mb-3 text-center">
-                                <div class="card-header">English</div>
-                                <div class="card-body">
-                                    <h5 class="card-title">Basic Details regarding this course</h5>
-                                    <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur
-                                        adipisicing
-                                        elit.
-                                        Incidunt, dignissimos!</p>
-                                    <a class="btn" id="btnCourses" href="../views/classInfoStudent.html">Class
-                                        Info</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
             </div>
 
+            <div class="tab-pane fade" id="v-pills-rubyScripts" role="tabpanel">
+                <h2>Scripts to use</h2>
+                <div class="line"></div>
+                <div class="card-columns">
+                    <div class="container">
+                        <div class="card text-white mb-3 text-center">
+                            <div class="card-header">Math</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Basic Details regarding this course</h5>
+                                <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing
+                                    elit.
+                                    Incidunt, dignissimos!</p>
+                                <a class="btn" id="btnCourses" href="../views/classInfoStudent.html">Class
+                                    Info</a>
+                            </div>
+                        </div>
+
+                        <div class="card text-white mb-3 text-center">
+                            <div class="card-header">Science</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Basic Details regarding this course</h5>
+                                <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing
+                                    elit.
+                                    Incidunt, dignissimos!</p>
+
+                                <a class="btn" id="btnCourses" href="../views/classInfoStudent.html">Class
+                                    Info</a>
+                            </div>
+
+                        </div>
+
+                        <div class="card text-white  mb-3 text-center">
+                            <div class="card-header">English</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Basic Details regarding this course</h5>
+                                <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing
+                                    elit.
+                                    Incidunt, dignissimos!</p>
+                                <a class="btn" id="btnCourses" href="../views/classInfoStudent.html">Class
+                                    Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+    </div>
     </div>
 
 
