@@ -55,32 +55,24 @@
                                 data-toggle="pill" href="#v-pills-rubyScripts" role="tab">Ruby Scripts</a>
                         </ul>
                     </li>
-                    <!-- <li><a class="nav-link" id="v-pills-studentCalendar-tab" data-toggle="pill"
-                            href="#v-pills-studentCalendar" role="tab">Another 1</a></li>
-                    <li><a class="nav-link" id="v-pills-studentCourses-tab" data-toggle="pill"
-                            href="#v-pills-studentCourses" role="tab">Another 2</a></li>
+
 
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Appium
                             <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Submenu 1-1</a></li>
-                            <li><a href="#">Submenu 1-2</a></li>
-                            <li><a href="#">Submenu 1-3</a></li>
+                            <a class="nav-link border-bottom border-light" id="v-pills-appiumOverview-tab"
+                                data-toggle="pill" href="#v-pills-appiumOverview" role="tab">Appium Overview</a>
+                            <a class="nav-link border-bottom border-light" id="v-pills-appiumInstallation-tab"
+                                data-toggle="pill" href="#v-pills-appiumInstallation" role="tab">Appium Installation</a>
+                            <a class="nav-link border-bottom border-light" id="v-pills-appiumTests-tab"
+                                data-toggle="pill" href="#v-pills-appiumTests" role="tab">Appium Test Execution</a>
+                            <a class="nav-link border-bottom border-light" id="v-pills-appiumScripts-tab"
+                                data-toggle="pill" href="#v-pills-appiumScripts" role="tab">Appium Scripts</a>
                         </ul>
-                    </li> -->
+                    </li>
                 </ul>
             </div>
-
-            <!-- <ul class="list-unstyled CTAs">
-                <div class="text-center">
-                    <a href="../views/index.html">
-                        <button class="btn" type="submit" id="logOut">Log
-                            Out</button>
-                    </a>
-                </div>
-
-            </ul> -->
         </nav>
 
         <!-- Page Content Holder -->
@@ -125,14 +117,14 @@
                     </p>
                     <div class="line"></div>
                     <p>Important Steps to take before writting automation:
-                        <ul>Number one, it's all about deciding what features to automate. This requires having
-                            knowledge of the application under test and all of the available functionality. </ul>
-                        <ul>Number two, outline the scenarios that will be automated, and the steps of each test. Be
-                            aware of what the inputs and outputs will be, and the value each scenario implemented will
-                            provide.</ul>
-                        <ul>Number three, find the web elements that will be needed for testing. It's important to
-                            figure out what elements are going to be used in the tests upfront. This will make test
-                            writing much easier, faster, and smoother</ul>
+                    <ul>Number one, it's all about deciding what features to automate. This requires having
+                        knowledge of the application under test and all of the available functionality. </ul>
+                    <ul>Number two, outline the scenarios that will be automated, and the steps of each test. Be
+                        aware of what the inputs and outputs will be, and the value each scenario implemented will
+                        provide.</ul>
+                    <ul>Number three, find the web elements that will be needed for testing. It's important to
+                        figure out what elements are going to be used in the tests upfront. This will make test
+                        writing much easier, faster, and smoother</ul>
                     </p>
                     <div class="line"></div>
 
@@ -156,8 +148,8 @@
                             which stands for the Ruby Version Manager, it's widely used, and allows
                             you to
                             quickly and easily install Ruby.
-                            <p><a class="btn" href="http://rvm.io/" role="button" target="_blank">Ruby RVM Website</a>
-                            </p>
+                        <p><a class="btn" href="http://rvm.io/" role="button" target="_blank">Ruby RVM Website</a>
+                        </p>
                         </p>
                     </div>
                     <div class="line"></div>
@@ -308,9 +300,9 @@
                     <div class="text-center">
                         <h2>Using WebDriver</h2>
                         <p>The Webdriver API docs can be found on the following site:
-                            <p> <a class="btn"
-                                    href="https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/index.html"
-                                    role="button" target="_blank">Webdriver API Docs</a></p>
+                        <p> <a class="btn"
+                                href="https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/index.html"
+                                role="button" target="_blank">Webdriver API Docs</a></p>
                         </p>
                         <div class="line"></div>
                     </div>
@@ -392,15 +384,15 @@
                                     <div class="card-body">
                                         <p>To execute the test, open up the terminal and go to the
                                             location of the file to be executed.
-                                            <p> This location should contain both the Gemfile and the
-                                                sample-test.rb files</p>
-                                            # 1) Execute the following command:<br>
-                                            <code>rspec sample-test.rb</code><br><br>
-                                            <p>Sit back and wait for the reults, if everything is
-                                                working correctly the test should execute</p>
-                                            <p>
-                                                <h2>Congratulations!</h2>
-                                            </p>
+                                        <p> This location should contain both the Gemfile and the
+                                            sample-test.rb files</p>
+                                        # 1) Execute the following command:<br>
+                                        <code>rspec sample-test.rb</code><br><br>
+                                        <p>Sit back and wait for the reults, if everything is
+                                            working correctly the test should execute</p>
+                                        <p>
+                                        <h2>Congratulations!</h2>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -410,60 +402,434 @@
                 </div>
 
 
-            </div>
-
-            <div class="tab-pane fade" id="v-pills-rubyScripts" role="tabpanel">
-                <h2>Scripts to use</h2>
-                <div class="line"></div>
-                <div class="card-columns">
-                    <div class="container">
-                        <div class="card text-white mb-3 text-center">
-                            <div class="card-header">Math</div>
-                            <div class="card-body">
-                                <h5 class="card-title">Basic Details regarding this course</h5>
-                                <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing
-                                    elit.
-                                    Incidunt, dignissimos!</p>
-                                <a class="btn" id="btnCourses" href="../views/classInfoStudent.html">Class
-                                    Info</a>
-                            </div>
-                        </div>
-
-                        <div class="card text-white mb-3 text-center">
-                            <div class="card-header">Science</div>
-                            <div class="card-body">
-                                <h5 class="card-title">Basic Details regarding this course</h5>
-                                <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing
-                                    elit.
-                                    Incidunt, dignissimos!</p>
-
-                                <a class="btn" id="btnCourses" href="../views/classInfoStudent.html">Class
-                                    Info</a>
+                <div class="tab-pane fade" id="v-pills-rubyScripts" role="tabpanel">
+                    <h2>Scripts to use</h2>
+                    <div class="line"></div>
+                    <div class="card-columns">
+                        <div class="container">
+                            <div class="card text-white mb-3 text-center">
+                                <div class="card-header">Math</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Basic Details regarding this course</h5>
+                                    <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing
+                                        elit.
+                                        Incidunt, dignissimos!</p>
+                                    <a class="btn" id="btnCourses" href="../views/classInfoStudent.html">Class
+                                        Info</a>
+                                </div>
                             </div>
 
-                        </div>
+                            <div class="card text-white mb-3 text-center">
+                                <div class="card-header">Science</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Basic Details regarding this course</h5>
+                                    <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing
+                                        elit.
+                                        Incidunt, dignissimos!</p>
 
-                        <div class="card text-white  mb-3 text-center">
-                            <div class="card-header">English</div>
-                            <div class="card-body">
-                                <h5 class="card-title">Basic Details regarding this course</h5>
-                                <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur
-                                    adipisicing
-                                    elit.
-                                    Incidunt, dignissimos!</p>
-                                <a class="btn" id="btnCourses" href="../views/classInfoStudent.html">Class
-                                    Info</a>
+                                    <a class="btn" id="btnCourses" href="../views/classInfoStudent.html">Class
+                                        Info</a>
+                                </div>
+
+                            </div>
+
+                            <div class="card text-white  mb-3 text-center">
+                                <div class="card-header">English</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Basic Details regarding this course</h5>
+                                    <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing
+                                        elit.
+                                        Incidunt, dignissimos!</p>
+                                    <a class="btn" id="btnCourses" href="../views/classInfoStudent.html">Class
+                                        Info</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="tab-pane fade" id="v-pills-appiumOverview" role="tabpanel">
+                    <div class="text-center">
+                        <h2>Appium Overview</h2>
+                        <p class="card-text">Appium is an open-source tool for automating native, mobile web, and hybrid
+                            applications on iOS mobile, Android mobile, and Windows desktop platforms.
+                            It's actually a collection of a number of different components. The
+                            most basic and important distinction to make in the world of Appium is between the Appium
+                            Server and the Appium Clients.<br> There is just one Appium Server whereas there are a
+                            number of different Clients.<br>
+
+                        <p><a class="btn" href="hhttp://appium.io/docs/en/about-appium/intro/?lang=en" role="button"
+                                target="_blank">Appium Website</a>
+                        </p>
+                        </p>
+                    </div>
+                    <div class="line"></div>
+
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col">
+                                <div class="card text-white text-center">
+                                    <h5 class="card-header">Appium Concepts</h5>
+                                    <div class="card-body">
+
+                                        <h3>Client/Server Architecture</h3>
+                                        <p class="card-text">
+                                            This Client-Server architecture is the secret behind
+                                            much
+                                            of Appium's awesomeness. <br>
+                                            Appium is at its heart a webserver that exposes a REST API. It receives
+                                            connections from a client, listens for commands, executes those commands on
+                                            a
+                                            mobile device, and responds with an HTTP response representing the result of
+                                            the
+                                            command execution. The fact that we have a client/server architecture opens
+                                            up a
+                                            lot of possibilities: we can write our test code in any language that has a
+                                            http
+                                            client API, but it is easier to use one of the Appium client libraries. We
+                                            can
+                                            put the server on a different machine than our tests are running on. We can
+                                            write test code and rely on a cloud service like Sauce Labs to receive and
+                                            interpret the commands.
+                                        </p>
+                                        <br>
+
+                                        <h3>Drivers</h3>
+                                        <p class="card-text">
+                                            Apart from the fact that Appium has a client-server architecture, the most
+                                            important thing to know about how Appium is designed is that it is built
+                                            around a number of platform-specific drivers. A driver is a code module that
+                                            translates the WebDriver protocol into actual automation behaviors for a
+                                            particular platform. Through the inclusion of a variety of different
+                                            drivers, Appium supports automation across a wide variety of platforms,
+                                            though of course, the most popular platforms are iOS and Android.<br>The way
+                                            it works is that your test script makes calls to a single Appium server.
+                                            Based on the type of platform you want to automate, for example, iOS, Appium
+                                            will choose an appropriate driver to handle commands for your test
+                                        </p>
+                                        <br>
+
+                                        <h3>Session</h3>
+                                        <p class="card-text">
+                                            Automation is always performed in the context of a session. Clients initiate
+                                            a session with a server in ways specific to each library, but they all end
+                                            up sending a POST /session request to the server, with a JSON object called
+                                            the 'desired capabilities' object. At this point the server will start up
+                                            the automation session and respond with a session ID which is used for
+                                            sending further commands.
+                                        </p>
+                                        <br>
+
+                                        <h3>Desired Capabilities</h3>
+                                        <p class="card-text">
+                                            Desired capabilities are a set of keys and values (i.e., a map or hash) sent
+                                            to the Appium server to tell the server what kind of automation session
+                                            we're interested in starting up. There are also various capabilities which
+                                            can modify the behavior of the server during automation. For example, we
+                                            might set the platformName capability to iOS to tell Appium that we want an
+                                            iOS session, rather than an Android or Windows one.
+                                            <li>See the capabilities doc for a complete list:<p> <a class="btn"
+                                                        href="http://appium.io/docs/en/writing-running-appium/caps/index.html"
+                                                        role="button" target="_blank">Appium Capabilities</a></p>
+                                            </li>
+                                        </p>
+                                        <br>
+
+                                        <h3>Appium Clients</h3>
+                                        <p class="card-text">
+                                            There are client libraries (in Java, Ruby, Python, PHP, JavaScript, and C#)
+                                            which support Appium's extensions to the WebDriver protocol. When using
+                                            Appium, you want to use these client libraries instead of your regular
+                                            WebDriver client.
+                                            <li>You can view the full list of libraries here.<p> <a class="btn"
+                                                        href="http://appium.io/docs/en/about-appium/appium-clients/index.html"
+                                                        role="button" target="_blank">Appium client libraries</a></p>
+                                            </li>
+
+                                        </p>
+                                        <br><br>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-appiumInstallation" role="tabpanel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card text-white text-center">
+                                    <h5 class="card-header">Appium Installation on iOS</h5>
+                                    <div class="card-body">
+                                        <h3>Requirements</h3>
+                                        <p class="card-text">
+                                        <ol>
+                                            <li value="1">Computer running macOS</li>
+                                            <li>Xcode IDE</li>
+                                            <li>Xcode command line tools</li>
+                                            To install, using terminal type:<br>
+                                            <code>sudo xcode-select --install</code>
+                                            <br>
+                                            <li>Homebrew</li>
+                                            If you don't already have Homebrew, using terminal type:<br>
+                                            <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"</code>
+                                            <br>
+                                            For more on Homebrew, check out the website:<br>
+                                            <a class="btn" href="https://brew.sh/" role="button"
+                                                target="_blank">Homebrew</a><br>
+                                            <li>Command line tool called Carthage</li>
+                                            Once Homebrew is installed, using terminal type:<br>
+                                            <code> brew install carthage</code>
+                                            <li>Make sure we have an appropriate iOS SDK available</li>
+                                            <ol type="A">
+                                                <li>Open Xcode</li>
+                                                <li>Go up to the Xcode menu and then down to Preferences</li>
+                                                <li>Select the tab labeled Components</li>
+                                                <li>this is a list of available simulator SDKs</li>
+                                                <li>Download whichever version you want to use by clicking the gray down
+                                                    arrow
+                                                    next to the SDK</li>
+                                            </ol>
+                                        </ol>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="card text-white text-center">
+                                    <h5 class="card-header">Appium Installation on Android</h5>
+                                    <div class="card-body">
+                                        <h3>Requirements</h3>
+                                        <p class="card-text">
+                                        <ol>
+                                            <li value="1">Computer running macOS</li>
+                                            <li>Android JDK</li>
+                                            <li>Java</li>
+                                            If not already installed, download latest Java version<br>
+                                            <a class="btn" href="https://www.java.com/en/download/" role="button"
+                                                target="_blank">Java </a><br>
+                                            <li>Java home directory</li>
+                                            To locate, using terminal type:<br>
+                                            <code>/usr/libexec/java_home</code><br>
+                                            The returned path will be used later
+                                            during Appium setup
+                                            <br>
+                                            <li>Android Studio</li>
+                                            If not already installed, download latest Android Studio version<br>
+
+                                            <a class="btn" href="https://developer.android.com/studio" role="button"
+                                                target="_blank">Android Studio</a><br>
+
+                                            <li>Make sure we have an appropriate Android SDK available</li>
+                                            <ol type="A">
+                                                <li>Open Android Studio</li>
+                                                <li>Go through the new project set-up flow</li>
+                                                <li>From the menu navigate to Tools > SDK Manager </li>
+                                                <li>Under the SDK Platforms Tab:</li>
+                                                - Select the API version(s) you want to install
+
+                                                <li>Under the SDK Tools Tab, select:</li>
+                                                - Android Build Tools<br>
+                                                - Android Emulator<br>
+                                                - SDK Platform Tools<br>
+                                                - SDK Tools<br>
+                                                - Intel x86 Emulator Accelerator<br>
+                                                <li>Click Apply and go through the download process</li>
+
+                                            </ol>
+                                        </ol>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card text-white text-center">
+                                    <h5 class="card-header">Setting up Android Virtual Device</h5>
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        <ol>
+                                            <li value="1">From the menu navigate to Tools > AVD Manager</li>
+                                            <li>Click on Create Virtual Device and this will give us the opportunity to
+                                                configure a new virtual device.</li>
+                                            <li>You can pick pretty much any device you'd like to test
+                                            </li>
+                                            <li>Pick whichever version of Android
+                                                should run on this emulator; for example Android Pie which
+                                                is API Level 28</li>
+                                            - If it's grayed out, click the appropriate download
+                                            link<br>
+                                            <li>Now we get to
+                                                name our emulator, let's call it Appium, the rest of the settings should
+                                                be fine.</li>
+                                            <li>Click finish and the emulator will show up in the AVD
+                                                Manager</li>
+                                            <li>Launch the emulator by clicking the green Play button in the Actions
+                                                column.</li>
+                                            </li>
+                                            <li>Wait for the emulator to boot, now you can use it just like I would a
+                                                real Android device!</li>
+                                        </ol>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="tab-pane fade" id="v-pills-appiumTests" role="tabpanel">
+                    <div class="text-center">
+                        <h2>Appioum ests</h2>
+                        <p>Appium tests
+                        <p> <a class="btn"
+                                href="https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/index.html"
+                                role="button" target="_blank">Webdriver API Docs</a></p>
+                        </p>
+                        <div class="line"></div>
+                    </div>
+                    <p>Appiuym Stuff.</p><br>
+                    <p> More stuff</p>
+                    <div class="line"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card text-white mb-3 text-center">
+                                    <div class="card-header">Sample Test</div>
+                                    <div class="card-body">
+
+                                        <p> The following is a very simple sample test using such classes and
+                                            methods:
+                                        </p>
+
+                                        <a class="btn" role="button" href="./assets/files/sample-test.rb" download>
+                                            Download Sample Code
+                                        </a>
+
+
+                                        </p>
+
+                                        # 1) Requires the selenium-webdriver gem in order to use the webdriver API
+                                        library<br>
+                                        <code>require "selenium-webdriver"</code><br>
+                                        # 2) Using the Driver Class:<br>
+                                        # Set-up the driver, in this case we create a new instance of the Firefox
+                                        driver.<br>
+                                        <code>driver = Selenium::WebDriver.for :firefox</code><br>
+                                        # Then we use the same driver to navigate into the google URL<br>
+                                        <code>driver.navigate.to "http://google.com"</code><br>
+                                        # 3) We now use the Search Context Class to find elements, which will find
+                                        the
+                                        first element matching the given arguments<br>
+                                        # There are many options available to find an HTML element, such as class
+                                        name,
+                                        CSS
+                                        selector, ID, or tag name.<br>
+                                        # In this case, we are finding an element with the name 'q'<br>
+                                        <code> element = driver.find_element(name: 'q')</code><br>
+
+                                        # 4) After finding an element, the next step is to perform some action on
+                                        that
+                                        element. This
+                                        all happens within the Element Class.<br>
+                                        # In the element class, there are tons of options that can be used to drive
+                                        action on
+                                        elements.<br>
+                                        # In this case we are going to click.<br>
+                                        <code> element.click</code><br>
+                                        # In this case we are going to type (send keys)<br>
+                                        <code> element.send_keys "Hello WebDriver!"</code><br>
+                                        # In this case we are clicking and submitting the specified form element<br>
+                                        <code> element.submit</code><br>
+
+                                        # Hefe we will close the driver session<br>
+                                        <code>driver.quit</code><br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+
+
+                                <div class="card text-white mb-3 text-center">
+                                    <div class="card-header">Test Execution</div>
+                                    <div class="card-body">
+                                        <p>To execute the test, open up the terminal and go to the
+                                            location of the file to be executed.
+                                        <p> This location should contain both the Gemfile and the
+                                            sample-test.rb files</p>
+                                        # 1) Execute the following command:<br>
+                                        <code>rspec sample-test.rb</code><br><br>
+                                        <p>Sit back and wait for the reults, if everything is
+                                            working correctly the test should execute</p>
+                                        <p>
+                                        <h2>Congratulations!</h2>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="v-pills-appiumScripts" role="tabpanel">
+                    <h2>Scripts to use</h2>
+                    <div class="line"></div>
+                    <div class="card-columns">
+                        <div class="container">
+                            <div class="card text-white mb-3 text-center">
+                                <div class="card-header">Math</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Basic Details regarding this course</h5>
+                                    <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing
+                                        elit.
+                                        Incidunt, dignissimos!</p>
+                                    <a class="btn" id="btnCourses" href="../views/classInfoStudent.html">Class
+                                        Info</a>
+                                </div>
+                            </div>
+
+                            <div class="card text-white mb-3 text-center">
+                                <div class="card-header">Science</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Basic Details regarding this course</h5>
+                                    <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing
+                                        elit.
+                                        Incidunt, dignissimos!</p>
+
+                                    <a class="btn" id="btnCourses" href="../views/classInfoStudent.html">Class
+                                        Info</a>
+                                </div>
+
+                            </div>
+
+                            <div class="card text-white  mb-3 text-center">
+                                <div class="card-header">English</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Basic Details regarding this course</h5>
+                                    <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing
+                                        elit.
+                                        Incidunt, dignissimos!</p>
+                                    <a class="btn" id="btnCourses" href="../views/classInfoStudent.html">Class
+                                        Info</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
-
-    </div>
     </div>
 
 
