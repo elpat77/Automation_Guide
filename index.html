@@ -561,9 +561,10 @@
                 </div>
 
                 <div class="tab-pane fade" id="v-pills-appiumInstallation" role="tabpanel">
+
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 d-flex align-items-stretch">
                                 <div class="card text-white text-center">
                                     <h5 class="card-header">Appium Installation on iOS</h5>
                                     <div class="card-body">
@@ -582,7 +583,7 @@
                                             <br>
                                             For more on Homebrew, check out the website:<br>
                                             <a class="btn" href="https://brew.sh/" role="button"
-                                                target="_blank">Homebrew</a><br>
+                                                target="_blank">Homebrew</a><br><br>
                                             <li>Command line tool called Carthage</li>
                                             Once Homebrew is installed, using terminal type:<br>
                                             <code> brew install carthage</code>
@@ -591,7 +592,7 @@
                                                 <li>Open Xcode</li>
                                                 <li>Go up to the Xcode menu and then down to Preferences</li>
                                                 <li>Select the tab labeled Components</li>
-                                                <li>this is a list of available simulator SDKs</li>
+                                                <li>This is a list of available simulator SDKs</li>
                                                 <li>Download whichever version you want to use by clicking the gray down
                                                     arrow
                                                     next to the SDK</li>
@@ -615,12 +616,6 @@
                                             If not already installed, download latest Java version<br>
                                             <a class="btn" href="https://www.java.com/en/download/" role="button"
                                                 target="_blank">Java </a><br>
-                                            <li>Java home directory</li>
-                                            To locate, using terminal type:<br>
-                                            <code>/usr/libexec/java_home</code><br>
-                                            The returned path will be used later
-                                            during Appium setup
-                                            <br>
                                             <li>Android Studio</li>
                                             If not already installed, download latest Android Studio version<br>
 
@@ -632,8 +627,8 @@
                                                 <li>Open Android Studio</li>
                                                 <li>Go through the new project set-up flow</li>
                                                 <li>From the menu navigate to Tools > SDK Manager </li>
-                                                <li>Under the SDK Platforms Tab:</li>
-                                                - Select the API version(s) you want to install
+                                                <li>Go to SDK Platforms Tab, select the API version(s) you need
+                                                </li>
 
                                                 <li>Under the SDK Tools Tab, select:</li>
                                                 - Android Build Tools<br>
@@ -642,13 +637,52 @@
                                                 - SDK Tools<br>
                                                 - Intel x86 Emulator Accelerator<br>
                                                 <li>Click Apply and go through the download process</li>
-                                                <li>Create an Android Virtual Device</li>
+                                                <li>Create an Android Virtual Device by following instructions below:
+                                                </li>
+                                            </ol>
+                                        </ol>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row mt-3">
+                            <div class="col-sm-6 d-flex align-items-stretch">
+                                <div class="card text-white text-center">
+                                    <h5 class="card-header">Appium Desktop Installation</h5>
+                                    <div class="card-body">
+
+                                        <p class="card-text">
+                                        <ol>
+                                            <li value="1">Computer running macOS</li>
+                                            <li>Navigate to Appium's Github Page</li>
+                                            <a class="btn" href="https://github.com/appium/appium-desktop/releases"
+                                                role="button" target="_blank">Appium Releases</a><br>
+                                            <li>Download the appropriate installer for our platform</li>
+                                            <li>Go through the installation flow</li>
+                                            <li>Once Appium launches, you need to configure it the first time</li>
+                                            <ol type="A">
+                                                <li>Click Edit Configurations</li>
+                                                <li>Copy the path for the Android_Home location</li>
+                                                To locate, open Android SDK, navigate to SDK manager, where it displays
+                                                the location <br>
+                                                <li>Copy the path to the Java_Home Location</li>
+                                                To locate, using terminal type:<br>
+                                                <code>/usr/libexec/java_home</code><br>
+                                                <li>Save the configuration and restart Appium</li>
+                                                <li>Launch Appium and click on Start Server</li>
+                                                <li>Now, we see a server log window, where Appium will log its output
+                                                    when we actually start running real tests using this server</li>
 
                                             </ol>
                                         </ol>
                                         </p>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-sm-6">
                                 <div class="card text-white text-center">
                                     <h5 class="card-header">Setting up Android Virtual Device</h5>
                                     <div class="card-body">
@@ -675,15 +709,12 @@
                                             <li>Wait for the emulator to boot, now you can use it just like I would a
                                                 real Android device!</li>
                                         </ol>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
 
                 <div class="tab-pane fade" id="v-pills-appiumTests" role="tabpanel">
                     <div class="text-center">
