@@ -127,7 +127,6 @@
                         writing much easier, faster, and smoother</ul>
                     </p>
                     <div class="line"></div>
-
                 </div>
 
                 <div class="tab-pane fade" id="v-pills-rubyOverview" role="tabpanel">
@@ -341,44 +340,42 @@
 
                                         </p>
 
-                                        # 1) Requires the selenium-webdriver gem in order to use the webdriver API
+                                        1) Requires the selenium-webdriver gem in order to use the webdriver API
                                         library<br>
                                         <code>require "selenium-webdriver"</code><br>
-                                        # 2) Using the Driver Class:<br>
-                                        # Set-up the driver, in this case we create a new instance of the Firefox
+                                        2) Using the Driver Class:<br>
+                                        Set-up the driver, in this case we create a new instance of the Firefox
                                         driver.<br>
                                         <code>driver = Selenium::WebDriver.for :firefox</code><br>
-                                        # Then we use the same driver to navigate into the google URL<br>
+                                        Then we use the same driver to navigate into the google URL<br>
                                         <code>driver.navigate.to "http://google.com"</code><br>
-                                        # 3) We now use the Search Context Class to find elements, which will find the
+                                        3) We now use the Search Context Class to find elements, which will find the
                                         first element matching the given arguments<br>
-                                        # There are many options available to find an HTML element, such as class name,
+                                        There are many options available to find an HTML element, such as class name,
                                         CSS
                                         selector, ID, or tag name.<br>
-                                        # In this case, we are finding an element with the name 'q'<br>
+                                        In this case, we are finding an element with the name 'q'<br>
                                         <code> element = driver.find_element(name: 'q')</code><br>
 
-                                        # 4) After finding an element, the next step is to perform some action on that
+                                        4) After finding an element, the next step is to perform some action on that
                                         element. This
                                         all happens within the Element Class.<br>
-                                        # In the element class, there are tons of options that can be used to drive
+                                        In the element class, there are tons of options that can be used to drive
                                         action on
                                         elements.<br>
-                                        # In this case we are going to click.<br>
+                                        In this case we are going to click.<br>
                                         <code> element.click</code><br>
-                                        # In this case we are going to type (send keys)<br>
+                                        In this case we are going to type (send keys)<br>
                                         <code> element.send_keys "Hello WebDriver!"</code><br>
-                                        # In this case we are clicking and submitting the specified form element<br>
+                                        In this case we are clicking and submitting the specified form element<br>
                                         <code> element.submit</code><br>
 
-                                        # Hefe we will close the driver session<br>
+                                        Here we will close the driver session<br>
                                         <code>driver.quit</code><br>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-6">
-
-
                                 <div class="card text-white mb-3 text-center">
                                     <div class="card-header">Test Execution</div>
                                     <div class="card-body">
@@ -386,7 +383,7 @@
                                             location of the file to be executed.
                                         <p> This location should contain both the Gemfile and the
                                             sample-test.rb files</p>
-                                        # 1) Execute the following command:<br>
+                                        1) Execute the following command:<br>
                                         <code>rspec sample-test.rb</code><br><br>
                                         <p>Sit back and wait for the reults, if everything is
                                             working correctly the test should execute</p>
@@ -450,6 +447,7 @@
                         </div>
                     </div>
                 </div>
+
 
                 <div class="tab-pane fade" id="v-pills-appiumOverview" role="tabpanel">
                     <div class="text-center">
@@ -559,6 +557,7 @@
                         </div>
                     </div>
                 </div>
+
 
                 <div class="tab-pane fade" id="v-pills-appiumInstallation" role="tabpanel">
 
@@ -716,96 +715,144 @@
                     </div>
                 </div>
 
+
                 <div class="tab-pane fade" id="v-pills-appiumTests" role="tabpanel">
                     <div class="text-center">
-                        <h2>Appioum ests</h2>
-                        <p>Appium tests
-                        <p> <a class="btn"
-                                href="https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/index.html"
-                                role="button" target="_blank">Webdriver API Docs</a></p>
-                        </p>
-                        <div class="line"></div>
-                    </div>
-                    <p>Appiuym Stuff.</p><br>
-                    <p> More stuff</p>
-                    <div class="line"></div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="card text-white mb-3 text-center">
-                                    <div class="card-header">Sample Test</div>
-                                    <div class="card-body">
+                        <h2>Test Set-up</h2>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <p>As already mentioned, Appium has a client-server architecture which means every
+                                        Appium
+                                        command gets sent over the network as an http request. We want our test to
+                                        proceed in a
+                                        logical manner, one step after the other, finding elements and interacting with
+                                        them. What
+                                        this means is that our Appium client code needs to attach something to every
+                                        request to let
+                                        the Appium server know we are dealing with the same test. In Appium web driver
+                                        lingo, that
+                                        little something is called a session ID and the Appium server will associate any
+                                        commands
+                                        sent in with that ID as belonging to the same session. <br><BR>We can
+                                        start many
+                                        different kinds of Appium sessions, for example on an IOS
+                                        simulator, or on an Nexus S Android device
+                                        physically
+                                        plugged into our computer. So to make sure we're automating the right kind of
+                                        thing for our
+                                        test, we need to tell Appium what it is we want. We do this with a form of
+                                        session
+                                        parameters
+                                        known as capabilities.
+                                    <div class="line"></div>
+                                    <strong>Capabilities</strong> are essentially a
+                                    set of keys and
+                                    values
+                                    that get
+                                    wrapped up into an object and sent to the Appium server during session
+                                    initialization. There
+                                    are many, many capabilities that Appium supports, well over a hundred. Some
+                                    capabilities are
+                                    generic and take effect in any platform Appium supports. However, there's a
+                                    minimal set of capabilities which is required to start an Appium session on any
+                                    native mobile app, and those should always be included. These capabilities are:
+                                    </p>
 
-                                        <p> The following is a very simple sample test using such classes and
-                                            methods:
-                                        </p>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 offset-2 ">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <strong>platformName</strong> - the value here
+                                                should be a string noting the mobile platform you want to test on.
+                                                Usually, it's either IOS or
+                                                Android.<br><code>capabilities.setCapability("platformName", "Android");</code>
+                                            </li>
 
-                                        <a class="btn" role="button" href="./assets/files/sample-test.rb" download>
-                                            Download Sample Code
-                                        </a>
+                                            <li class="list-group-item"><strong>platformVersion</strong> - a string
+                                                denoting the version of that mobile operating system that you want to
+                                                automate. For example, if you're working with IOS it could be 12.1 or
+                                                12.2<br><code>capabilities.setCapability("platformVersion", "12.1");</code>
+                                            </li>
 
+                                            <li class="list-group-item"><strong>deviceName</strong> - this is a string
+                                                that specifies which device Appium should connect to. It could be for
+                                                example, the Androiud Emulator
+                                                simulator<br><code>capabilities.setCapability("deviceName", "Android Emulator");</code>
+                                            </li>
 
-                                        </p>
+                                            <li class="list-group-item"><strong>automationName</strong> - indicate which
+                                                driver to use, it could be Apple's XCUITest or UiAutomator2Driver for
+                                                Android<br><code>capabilities.setCapability("automationName", "UiAutomator2");</code>
+                                            </li>
 
-                                        # 1) Requires the selenium-webdriver gem in order to use the webdriver API
-                                        library<br>
-                                        <code>require "selenium-webdriver"</code><br>
-                                        # 2) Using the Driver Class:<br>
-                                        # Set-up the driver, in this case we create a new instance of the Firefox
-                                        driver.<br>
-                                        <code>driver = Selenium::WebDriver.for :firefox</code><br>
-                                        # Then we use the same driver to navigate into the google URL<br>
-                                        <code>driver.navigate.to "http://google.com"</code><br>
-                                        # 3) We now use the Search Context Class to find elements, which will find
-                                        the
-                                        first element matching the given arguments<br>
-                                        # There are many options available to find an HTML element, such as class
-                                        name,
-                                        CSS
-                                        selector, ID, or tag name.<br>
-                                        # In this case, we are finding an element with the name 'q'<br>
-                                        <code> element = driver.find_element(name: 'q')</code><br>
+                                            <li class="list-group-item"><strong>app</strong> - a path to the prebuilt
+                                                binary
+                                                version of the app that you want to test. It should either be an
+                                                absolute local path, like /users/foo/app.apk. It can also be a fully
+                                                qualified URL to a downloadable zipped version of the
+                                                app<br><code>capabilities.setCapability("app", "/path/to/my.apk");</code>
+                                            </li>
 
-                                        # 4) After finding an element, the next step is to perform some action on
-                                        that
-                                        element. This
-                                        all happens within the Element Class.<br>
-                                        # In the element class, there are tons of options that can be used to drive
-                                        action on
-                                        elements.<br>
-                                        # In this case we are going to click.<br>
-                                        <code> element.click</code><br>
-                                        # In this case we are going to type (send keys)<br>
-                                        <code> element.send_keys "Hello WebDriver!"</code><br>
-                                        # In this case we are clicking and submitting the specified form element<br>
-                                        <code> element.submit</code><br>
-
-                                        # Hefe we will close the driver session<br>
-                                        <code>driver.quit</code><br>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="row mt-3">
+                                <div class="col-sm-12 text-center">
+                                    <div class="line"></div>
+                                    <p>After defining our capabilities, we need to actually use them to start an
+                                        automation <strong>session.</strong> To start a session, we merely instantiate a
+                                        class called
+                                        Appium driver. <br>There are two important classes that inherit
+                                        from Appium driver. Base on which class we use, the java client will make sure
+                                        that the appropriate platform-specific methods are available to us:
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 offset-2 ">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <strong>1) Android Driver</strong> - In this example, we're starting
+                                                an Android session and we therefore use the Android driver class.
+                                                <br><code>AndroidDriver driver = new AndroidDriver (server,capabilities);</code>
+                                            </li>
 
+                                            <li class="list-group-item"><strong>2) iOS Driver</strong> - In this
+                                                example, we're starting
+                                                an iOS session and we therefore use the iOS driver
+                                                class.<br><code>IosDriver driver = new IosDriver (server,capabilities);</code>
+                                            </li>
 
-                                <div class="card text-white mb-3 text-center">
-                                    <div class="card-header">Test Execution</div>
-                                    <div class="card-body">
-                                        <p>To execute the test, open up the terminal and go to the
-                                            location of the file to be executed.
-                                        <p> This location should contain both the Gemfile and the
-                                            sample-test.rb files</p>
-                                        # 1) Execute the following command:<br>
-                                        <code>rspec sample-test.rb</code><br><br>
-                                        <p>Sit back and wait for the reults, if everything is
-                                            working correctly the test should execute</p>
-                                        <p>
-                                        <h2>Congratulations!</h2>
-                                        </p>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-
+                            <div class="row mt-3">
+                                <div class="col-sm-12 text-center">
+                                    <p>To start the session, we also need to tell the Appium client where the Appium
+                                        server is. In our case, we're assuming Appium is running locally, on its default
+                                        port of 4723.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-8 offset-2 ">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <code>URL server = new URL ("http://localhost:4723/wd/hub");</code>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="line"></div>
                         </div>
                     </div>
                 </div>
