@@ -27,35 +27,42 @@
 
 <body>
     <div class="wrapper">
-        <!-- Sidebar Holder -->
+        <!-- SIDEBAR -->
         <nav id="sidebar">
             <div class="sidebar-header">
                 <div class="container">
                     <div class="row">
                         <div class="logo">
                             <img class="logo" src="./assets/rock-n-roll-monkey-R4WCbazrD1g-unsplash-3-570x300.jpg">
+
                         </div>
                     </div>
                 </div>
             </div>
+
+
             <div>
+                <!-- GUIDES -->
                 <ul class="nav flex-column nav-pills list-unstyled components" id="v-pills-tab" role="tablist">
                     <div class="componentHeader" href="#">
-                        <h3>Automation</h3>
+                        <h3>Guides</h3>
                     </div>
+
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ruby
+                        <a class="dropdown-toggle python" data-toggle="dropdown" href="#">Python
                             <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <a class="nav-link border-bottom border-light" id="v-pills-rubyOverview-tab"
-                                data-toggle="pill" href="#v-pills-rubyOverview" role="tab">Ruby Overview</a>
-                            <a class="nav-link border-bottom border-light" id="v-pills-rubyTests-tab" data-toggle="pill"
-                                href="#v-pills-rubyTests" role="tab">Test Execution</a>
-                            <a class="nav-link border-bottom border-light" id="v-pills-rubyScripts-tab"
-                                data-toggle="pill" href="#v-pills-rubyScripts" role="tab">Ruby Scripts</a>
+                            <a class="nav-link border-bottom border-light" id="v-pills-pythonOverview-tab"
+                                data-toggle="pill" href="#v-pills-pythonOverview" role="tab">Python Overview</a>
+                            <a class="nav-link border-bottom border-light" id="v-pills-pythonInstallation-tab"
+                                data-toggle="pill" href="#v-pills-pythonInstallation" role="tab">Python
+                                Installation</a>
+                            <a class="nav-link border-bottom border-light" id="v-pills-pythonTests-tab"
+                                data-toggle="pill" href="#v-pills-pythonTests" role="tab">Python Test Execution</a>
+                            <a class="nav-link border-bottom border-light" id="v-pills-pythonScripts-tab"
+                                data-toggle="pill" href="#v-pills-pythonScripts" role="tab">Python Scripts</a>
                         </ul>
                     </li>
-
 
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Appium
@@ -71,12 +78,29 @@
                                 data-toggle="pill" href="#v-pills-appiumScripts" role="tab">Appium Scripts</a>
                         </ul>
                     </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ruby
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <a class="nav-link border-bottom border-light" id="v-pills-rubyOverview-tab"
+                                data-toggle="pill" href="#v-pills-rubyOverview" role="tab">Ruby Overview</a>
+                            <a class="nav-link border-bottom border-light" id="v-pills-rubyTests-tab" data-toggle="pill"
+                                href="#v-pills-rubyTests" role="tab">Using Selenium WebDriver</a>
+                            <a class="nav-link border-bottom border-light" id="v-pills-rubyScripts-tab"
+                                data-toggle="pill" href="#v-pills-rubyScripts" role="tab">Ruby Scripts</a>
+                        </ul>
+                    </li>
                 </ul>
             </div>
+
+
+
         </nav>
 
-        <!-- Page Content Holder -->
+        <!-- PAGE CONTENT -->
         <div id="content">
+            <!-- HEADER -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                     <button type="button" id="sidebarCollapse" class="navbar-btn">
@@ -98,16 +122,13 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- <div class="text-center">
-                        <a href="">
-                            <button class="btn" type="submit" id="changeStPwdBtn">Change Password</button>
-                        </a>
-                    </div> -->
                 </div>
             </nav>
 
+            <!-- MAIN TABS -->
             <div class="tab-content" id="v-pills-tabContent">
 
+                <!-- WEBSITE OVERVIEW -->
                 <div class="tab-pane fade show active text-center" id="v-pills-websiteOverview" role="tabpanel">
                     <h2>Website Overview</h2>
                     <div class="line"></div>
@@ -121,6 +142,8 @@
                                     run tests.
                                 </p>
                                 <div class="line"></div>
+
+
                                 <p>Important Steps to take before writting automation:
                                 <ul>Number one, it's all about deciding what features to automate. This requires having
                                     knowledge of the application under test and all of the available functionality.
@@ -142,6 +165,207 @@
                     <div class="line"></div>
                 </div>
 
+                <!-- PYTHON SECTION - OVERVIEW-->
+                <div class="tab-pane fade" id="v-pills-pythonOverview" role="tabpanel">
+                    <div class="text-center">
+                        <h2>Python Overview</h2>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <p class="card-text">This guide teaches the basic Python Skills
+                                        <br><br>
+                                        Python makes it easy to express the fundamental concepts of programming like
+                                        data structures and algorithms with easy to read syntax. This makes Python a
+                                        great language to use to learn programming. And there are other reasons to pick
+                                        Python, too. Python is super popular in the IT industry, making it one of the
+                                        most common programming languages used today.
+                                        Python is perfect for automation - It lets you automate everyday tasks by
+                                        writing
+                                        simple scripts that are easy to understand and easy to maintain. That's why
+                                        Python is the language of choice for lots of people working in IT support,
+                                        system administration, and web development. Not only that, but it's also used in
+                                        fast-growing areas of IT, like machine learning or data analytics. Last but not
+                                        least, Python is available for download on a wide variety of operating systems,
+                                        like Windows, Linux, and Mac OS.
+                                        <br><br>
+                                        One of the things I like the most about Python is that the code is really
+                                        readable. You can give a piece of Python code to someone that doesn't even know
+                                        how to program and most of the time, they will have at least some idea of what
+                                        is going on. The other thing I like about Python is that is comes with a lot of
+                                        modules that do a lot of the things that we want to do already. It's been around
+                                        for a while. There's a lot of people that have contributed all of these modules.
+                                        So it's very likely that the thing you want to do, it's already in a module, and
+                                        you only have to import it and use it. No computer language is perfect. <br>
+                                        Every
+                                        computer language has its advantages and disadvantages. In the case of Python,
+                                        the one thing that I find the most annoying is that because it's not a compiled
+                                        language, there could be errors in the code that only gets detected very late in
+                                        the development process. And well, it's not good that all these hidden errors
+                                        could be in the code. It can be mitigated by writing good tests.
+                                        <br><br>
+                                        Below, you’ll find links to some of the most popular online interpreters and
+                                        codepads. <br> Give them a go to find your favorite!
+                                    <p><a class="btn mb-3" href="https://www.python.org/shell/" role="button"
+                                            target="_blank">Python Shell</a>
+                                        <a class="btn mb-3" href="https://www.onlinegdb.com/online_python_interpreter"
+                                            role="button" target="_blank">Python Interpreter</a>
+                                        <a class="btn mb-3" href="https://repl.it/languages/python3" role="button"
+                                            target="_blank">Python Repl</a>
+                                        <a class="btn mb-3"
+                                            href="https://www.tutorialspoint.com/execute_python3_online.php"
+                                            role="button" target="_blank">Python Coding Ground</a>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="card text-white text-center">
+                                    <h5 class="card-header">Ruby Installation</h5>
+                                    <div class="card-body">
+                                        <p class="card-text">
+
+                                            <li>For installing RVM with default Ruby and Rails in one command, type:<br>
+                                                <code>\curl -sSL https://get.rvm.io | bash -s stable --rails</code>
+                                            </li><br><br>
+
+                                            <li>If you only want the latest stable version
+                                                of RVM; just type:<br>
+                                                <code>\curl -sSL https://get.rvm.io | bash -s stable </code>
+                                            </li><br><br>
+
+                                            <li>Once it completes, you can confirm that Ruby was successfully installed
+                                                by
+                                                typing:<br>
+                                                <code>ruby -v</code>
+                                            </li>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card text-white text-center mt-3">
+                                    <h5 class="card-header">Additional Drivers</h5>
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            <li>The last thing to do before jumping into writing a test is to
+                                                make
+                                                sure
+                                                that
+                                                we have a browser driver set up. In this case we are using
+                                                geckodriver
+                                                so that tests written in webdriver can be read in Firefox.<br><br>
+                                                The
+                                                download
+                                                link is: <p><a class="btn"
+                                                        href="https://github.com/mozilla/geckodriver/releases"
+                                                        role="button" target="_blank">Gecko
+                                                        Driver</a></p>
+
+                                            </li>
+                                            <li>Click on the releases tab. Once there, look for the latest
+                                                release
+                                                and
+                                                download the package for your specific OS; in this case Mac OS.
+                                            </li><br><br>
+                                            <li> If desired, move the downloaded folder to a folder of your
+                                                choosing
+                                                and
+                                                unzip it.</li><br><br>
+                                            <li>Add the location path into the profile file: <br>
+
+                                                <code>echo $PATH </code> - Use this command to look at the
+                                                current
+                                                path<br>
+                                                <code>export PATH=$PATH: ~/Downloads/ </code> - or whichever
+                                                path
+                                                the
+                                                file
+                                                is
+                                                located</li>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card text-white text-center">
+                                    <h5 class="card-header">Selenium Webriver for Ruby</h5>
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            In order to create scripts that interact with the Selenium Server
+                                            (Remote
+                                            WebDriver) or create local Selenium WebDriver scripts, you need to make
+                                            use
+                                            of language-specific client drivers.<br><br></p>
+
+                                        <li>In this case we need the Ruby specific gemfile, which can be downloaded on
+                                            the following link: <p> <a class="btn"
+                                                    href="https://rubygems.org/gems/selenium-webdriver" role="button"
+                                                    target="_blank">Ruby
+                                                    Gems</a></p>
+                                        </li>
+
+                                        <p class="card-text">
+                                            Just a note on Gems and Ruby, Gems are independent software packages.
+                                            You can think of it as a library or plug-in. RubyGems is the package
+                                            management framework. And each gem needs to be installed before using
+                                            it.
+                                            Gems can
+                                            either be installed via gem install or via the bundler.<br><br></p>
+
+                                        <li>Install gems by locating the "Gemfile" command and copying it; it looks
+                                            something like this: <p>
+                                                <code> gem 'selenium-webdriver', '~> 3.142', '>= 3.142.7'</code>
+                                            </p>
+                                        </li>
+                                        <li> Download the following sample Gemfile and place it within your project
+                                            folder, you
+                                            can open it using a text
+                                            editor
+                                            such as
+                                            Sublime Text.<br>
+
+                                            <a class="btn" role="button" href="./assets/files/Gemfile" download>
+                                                Download Sample Gemfile
+                                            </a>
+                                        </li>
+                                        <br>
+                                        <li>Once the file is open, the first line of this file should be the
+                                            source.
+                                            The
+                                            source is the webpage, rubygems.org and tells the bundler where to go to
+                                            search
+                                            for and install the specified Gems.<br> (this is the gemfile source we
+                                            just
+                                            copied)</li><br><br>
+
+                                        </li>
+                                        <li> In this case the Gemile should contain the following two lines:<br>
+                                            <code>source 'https://rubygems.org'
+                                        </code><br>
+                                            <code>gem 'selenium-webdriver', '~> 3.142', '>= 3.142.7'</code></li><br>
+                                        <li>To install and manage Gem dependencies in this file, we must use the
+                                            bundler.
+                                            Navigate to the project where the gemfile is located, with
+                                            terminal and run:</li>
+                                        <code>gem install bundler</code><br>
+                                        <code>bundle install</code>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- RUBY SECTION - OVERVIEW-->
                 <div class="tab-pane fade" id="v-pills-rubyOverview" role="tabpanel">
                     <div class="text-center">
                         <h2>Ruby Overview</h2>
@@ -314,7 +538,7 @@
                     </div>
                 </div>
 
-
+                <!-- RUBY WEBDRIVER -->
                 <div class="tab-pane fade" id="v-pills-rubyTests" role="tabpanel">
                     <div class="text-center">
                         <h2>Using WebDriver</h2>
@@ -431,7 +655,7 @@
                     </div>
                 </div>
 
-
+                <!-- RUBY SCRIPTS -->
                 <div class="tab-pane fade" id="v-pills-rubyScripts" role="tabpanel">
                     <h2>Scripts to use</h2>
                     <div class="line"></div>
@@ -481,7 +705,7 @@
                     </div>
                 </div>
 
-
+                <!-- APPIUM SECTION - OVERVIEW -->
                 <div class="tab-pane fade" id="v-pills-appiumOverview" role="tabpanel">
                     <div class="col-sm-12 text-center">
                         <h2>Appium Overview</h2>
@@ -600,7 +824,7 @@
                     </div>
                 </div>
 
-
+                <!-- APPIUM INSTALLATION -->
                 <div class="tab-pane fade" id="v-pills-appiumInstallation" role="tabpanel">
 
                     <div class="container">
@@ -757,7 +981,7 @@
                     </div>
                 </div>
 
-
+                <!-- APPIUM TEST EXECUTION -->
                 <div class="tab-pane fade" id="v-pills-appiumTests" role="tabpanel">
                     <div class="text-center">
                         <h2>Test Set-up</h2>
@@ -899,6 +1123,7 @@
                     </div>
                 </div>
 
+                <!-- APPIUM SCRIPTS -->
                 <div class="tab-pane fade" id="v-pills-appiumScripts" role="tabpanel">
                     <h2>Scripts to use</h2>
                     <div class="line"></div>
